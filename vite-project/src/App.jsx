@@ -15,17 +15,22 @@ function App() {
 export default App;
 
 
-// import {useState,useEffect} from "react";
-// function App() {
-//   const [users, setUsers] = useState([]);
+import { useState, useEffect } from "react";
 
-//   useEffect(() => {
-//     fetch("https://jsonplaceholder.typicode.com/users")
-//       .then((response) => response.json())
-//       .then((data) => setUsers(data));
-//   }, []);
+function App() {
+  const [users, setUsers] = useState([]);
 
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((data) => setUsers(data));
+  }, []);
 
+  return (
+    <div>
+ 
+    </div>
+  );
+}
 
-// }
-// export default App;
+export default App;
