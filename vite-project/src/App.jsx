@@ -16,16 +16,16 @@ export default App;
 
 
 // import {useState,useEffect} from "react";
-// function App(){
-//     const [user,setUsers]=useState([]);
-//     useEffect(()=>{
-//         fetch("https://jsonplaceholder.typicode.com/users")
-//         .then((response)=>(response.json))
-//         .then((response)=>(data))
-//     })
+// function App() {
+//   const [users, setUsers] = useState([]);
 
-//     return(
+//   useEffect(() => {
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//       .then((response) => response.json())
+//       .then((data) => setUsers(data));
+//   }, []);
 
-//     );
+
+
 // }
 // export default App;
