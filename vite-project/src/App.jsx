@@ -7,6 +7,7 @@ function App() {
     <div>
       <h1>Like Button</h1>
       <button onClick={() => setLiked(!liked)}>{liked ? "❤️" : "🤍"}</button>
+      <p>You liked the button</p>
     </div>
   );
 }
@@ -14,17 +15,17 @@ function App() {
 export default App;
 
 
-import {useState,useEffect} from "react";
-function App(){
-    const [user,setUsers]=useState([]);
-    useEffect(()=>{
-        fetch("https://jsonplaceholder.typicode.com/users")
-        .then((response)=>(response.json))
-        .then((response)=>(data))
-    })
+// import {useState,useEffect} from "react";
+// function App(){
+//     const [user,setUsers]=useState([]);
+//     useEffect(()=>{
+//         fetch("https://jsonplaceholder.typicode.com/users")
+//         .then((response)=>(response.json))
+//         .then((response)=>(data))
+//     })
 
-    return(
+//     return(
 
-    );
-}
-export default App;
+//     );
+// }
+// export default App;
